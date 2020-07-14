@@ -1,0 +1,842 @@
+{% include 'navbar.html' %}
+{%block content%}
+<!DOCTYPE html>
+{% load static %}
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <meta charset="utf-8">
+        <meta name="csrf-token" content="zLw13ySUXMiR5xNleU60HxxcAbR4K5Nht1SeUim9">
+        <title> IMS - Dashboard </title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+   
+    <style type="text/css">
+        h6 {
+            font-family: "Helvetica", arial;
+            font-weight: 600;
+            font-size: 11pt;
+        }
+        .item {
+            color: #000000;
+            text-align: center;
+            height: 120px;
+        }
+        .font-bold {
+            color: #ffffff;
+        }
+        .fav-icons{
+            border-radius: 5px;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            color: #ffffff;
+            justify-content: space-between;
+        }
+        .projects{
+            background-color: #5CB85C;
+        }
+        .policies{
+            background-color: #00ACED;  
+        }
+        .documents{
+            background-color: #EEA032;
+        }
+        .users{
+            background-color: #1c84c6;
+        }
+        .text-right{
+            width: 60%;
+        }
+    </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/fullcalendar.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/fullcalendar.print.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.gritter.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    
+    
+</head>
+<body class="  pace-done pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+  <div id="wrapper">
+      
+           <div id="page-wrapper" class="gray-bg" style="min-height: 651px;">
+               
+               <div class="row border-bottom">
+            <nav class="navbar navbar-static-top white-bg " role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-success " href="#"><i class="fa fa-bars"></i> </a>
+                    <form role="search" class="navbar-form-custom" method="post" action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="IMS " class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                    <span class="m-r-sm text-muted welcome-message">Welcome New User, </span>
+                </li>
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-warning"></span>
+                    </a>
+                </li>
+                    <li>
+                       
+                        <form id="logout-form" action="#" method="POST" style="display: none;">
+                            <input type="hidden" name="_token" value="unItraoR2t15u36219wGPomvpyK6Ao3PFkmG92kG">
+                        </form>
+                    </li>
+            
+                </ul>
+
+            </nav>
+        </div>
+                          
+               
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+
+                <div class="ibox-content">
+                    <div class="row ">
+                        <div class="col-lg-12">
+                            <div class="col-lg-8">
+                                <h3 class="mainTitle no-margin">Document Manager</h3>
+
+
+                            </div>
+                            <div class="col-lg-4">
+                                <ul class="pull-right breadcrumb">
+                                    <li>
+                                        <a href="#
+                                        "><i class="fa fa-home margin-right-5 text-large text-dark"></i> Home</a>
+                                    </li>
+                                    <li>
+                                        Documents
+                                    </li>
+                                </ul> 
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-lg-3">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-content">
+                            <div class="file-manager">
+                                <h5>Show:</h5>
+
+                                <div class="hr-line-dashed"></div>
+                                <a href="{% url 'documentupload' %}" class="btn btn-success btn-block">Upload File</a>
+                                <div class="hr-line-dashed"></div>
+                                <h5>Files</h5>
+
+                                <ul class="folder-list" style="padding: 0">
+                                    <li class="active"><a data-toggle="tab" href="#">Draft
+                                            <button type="button" class="btn btn-white pull-right btn-xs">
+                                                0</button></a></li>
+                                    <li><a data-toggle="tab" href="#">Sent 
+                                            <button type="button" class="btn btn-white pull-right btn-xs">
+                                                1</button></a></li>
+                                    <li><a data-toggle="tab" href="#">Received 
+                                            <button type="button" class="btn btn-white pull-right btn-xs">
+                                                0</button></a></li>
+                                    <li><a data-toggle="tab" href="#">Completed
+                                            <button type="button" class="btn btn-white pull-right btn-xs">
+                                                0</button></a></li>
+
+                                </ul>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            Documents
+                        </div>
+
+                        <div class="ibox-content">
+                            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div class="full-height full-height-scroll " style="overflow: hidden; width: auto; height: 100%;">
+                                <div class="element-detail-box">
+                                    <div class="tab-content">
+
+                                        <div id="tab-1" class="tab-pane active">
+                                            <div class="row">
+                                                <div id="docTable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap"><div class="html5buttons"><div class="dt-buttons btn-group"></div></div><div class="dataTables_length" id="docTable_length"><label>Show <select name="docTable_length" aria-controls="docTable" class="form-control input-sm"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="-1">All</option></select> entries</label></div><div id="docTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="docTable"></label></div><div class="dataTables_info" id="docTable_info" role="status" aria-live="polite">Showing 0 to 0 of 0 entries</div><table class="table table-stripped dataTables-example dataTable" id="docTable" aria-describedby="docTable_info" role="grid">
+                                                    <thead>
+                                                        <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="docTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 15px;"></th><th class="sorting" tabindex="0" aria-controls="docTable" rowspan="1" colspan="1" aria-label=" Name: activate to sort column ascending" style="width: 72px;"> Name</th><th class="sorting" tabindex="0" aria-controls="docTable" rowspan="1" colspan="1" aria-label="Upload by: activate to sort column ascending" style="width: 117px;">Upload by</th><th class="sorting" tabindex="0" aria-controls="docTable" rowspan="1" colspan="1" aria-label="Size: activate to sort column ascending" style="width: 58px;">Size</th><th class="sorting" tabindex="0" aria-controls="docTable" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 61px;">Date</th><th class="sorting" tabindex="0" aria-controls="docTable" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 79px;">Status</th><th class="sorting" tabindex="0" aria-controls="docTable" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 16px;"></th></tr>
+                                                    </thead>
+
+                                                    <tbody>
+
+                                                        
+                                                    <tr class="odd"><td valign="top" colspan="7" class="dataTables_empty">No data available in table</td></tr></tbody>
+                                                    <tfoot>
+                                                        <tr><td rowspan="1" colspan="1"></td><td rowspan="1" colspan="1"></td><td rowspan="1" colspan="1"></td><td rowspan="1" colspan="1"></td><td rowspan="1" colspan="1"></td><td rowspan="1" colspan="1"></td></tr>
+                                                    </tfoot>
+                                                </table><div class="dataTables_paginate paging_simple_numbers" id="docTable_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="docTable_previous"><a href="#" aria-controls="docTable" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button next disabled" id="docTable_next"><a href="#" aria-controls="docTable" data-dt-idx="1" tabindex="0">Next</a></li></ul></div></div>
+                                            </div>
+                                        </div>
+
+                                        <div id="tab-2" class="tab-pane ">
+                                            <div class="row">
+                                                <table class="table table-stripped dataTables-example dataTable" id="docTable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th><th> Name</th><th>Upload by</th><th>Size</th><th>Date</th><th>Status</th><th></th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+
+                                                                                                                
+
+                                                        <tr class="doc76" style="border-bottom: 1px solid #cccccc;" role="row">
+                                                            <td width="5%"><i class="fa fa-file-jpeg-o  text-danger"></i></td>
+                                                            <td width="50%">
+                                                                <a data-toggle="collapse" data-target="#76" data-parent="#accordion" aria-expanded="true" aria-controls="76" style="text-decoration:none">
+                                                                    Fgg</a> <br> 2020-Jul-06_IMG-20200628-WA0001.jpeg<br>
+
+                                                                <small>
+
+                                                                    <a href="http://ims.ict.go.ug/document/2020-Jul-06_IMG-20200628-WA0001.jpeg">Download</a>
+                                                                    &nbsp;&nbsp; |&nbsp;&nbsp;
+                                                                    
+                                                                    <a href="#" data-id="76" data-title="Fgg" class="complete-doc text-danger">
+                                                                        Mark as Complete</a>  
+                                                                                                                                    </small>
+                                                            </td>
+                                                            <td><small><a href="#">Robert Ravi</a></small><br></td>
+                                                            <td> <small>1.641 Kb</small></td>
+                                                            <td><small>Jul 06  </small></td>
+
+                                                            <td>
+                                                                <span class="label label-success">Sent</span>
+
+                                                            </td>
+                                                            <td><a data-toggle="collapse" data-target="#76" data-parent="#accordion" aria-expanded="true" aria-controls="76">
+                                                                    <i class="fa fa-plus-circle text-success"></i></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="6" class="hiddenRow">
+                                                                <div class="accordian-body collapse " id="76">
+                                                                    <div id="vertical-timeline" class="vertical-container dark-timeline">
+                                                                        
+              
+                                                                        <div class="vertical-timeline-block">
+                                                                            <div class="vertical-timeline-icon navy-bg">
+                                                                                <i class="fa fa-check"></i>
+                                                                            </div>
+                                                                            <div class="vertical-timeline-content">
+                                                                                Ieieue<br>
+                                                                                <small class="text-muted">
+                                                                                    Robert Ravi&nbsp; &gt; &nbsp; 
+                                                                                    James Kasigwa&nbsp; | &nbsp;
+                                                                                    July 06   <br>
+                                                                                                                                                                        <a href="http://ims.ict.go.ug/document/trail/2020-Jul-06_Screenshot_2020-07-06-09-48-07-738_com.google.android.music.jpg">
+                                                                                        <i class="fa fa-download"></i> 2020-Jul-06_Screenshot_2020-07-06-09-48-07-738_com.google.android.music.jpg</a>                                                                                </small><p>
+
+                                                                            </p></div>
+                                                                        </div>
+                                                                                                                                                <div class="vertical-timeline-block">
+                                                                            <div class="vertical-timeline-icon navy-bg">
+                                                                                <i class="fa fa-check"></i>
+                                                                            </div>
+                                                                            <div class="vertical-timeline-content">
+
+                                                                                <form method="POST" action="http://ims.ict.go.ug/documents" accept-charset="UTF-8" class="form-horizontal" data-toggle="validator" enctype="multipart/form-data"><input name="_token" type="hidden" value="unItraoR2t15u36219wGPomvpyK6Ao3PFkmG92kG">
+
+                                                                                <div class="form-group">
+                                                                                    <div class="col-lg-10">
+                                                                                        <input class="form-control" required="" hidden="" name="document_id" type="hidden" value="76"> 
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                                <div class="form-group col-lg-12">
+                                                                                    <div class="col-sm-8">
+                                                                                        <select class="form-control m-b" name="recipient_id"><option selected="selected" value="">Select recipient</option><option value="5">Charles Auk</option><option value="26">David Turahi</option><option value="11">Flavia Waduwa</option><option value="9">Geoffrey Agoi</option><option value="3">James Kasigwa</option><option value="16">John Mayanja</option><option value="21">Jonah Bakalikwira</option><option value="17">Judith Tibakunirwa</option><option value="22">Julius Kitiinisa</option><option value="4">Julius Torach</option><option value="15">Kambarage Kakonge</option><option value="14">Kasanga Kyetume</option><option value="7">Kenneth Bagarukayo</option><option value="6">Michael Ocero</option><option value="27">Monica Alwelo</option><option value="13">Moses Watasa</option><option value="1">Paul Kabagambe</option><option value="10">Paul Odoi</option><option value="18">Paul Odongo</option><option value="24">Peter Kaggwa</option><option value="28">Registry Officer</option><option value="8">Silas Ngabirano</option><option value="25">Simon Mayende</option><option value="12">Stella Kasemiire</option><option value="19">Vincent Bagiire</option><option value="23">Yona Okoth</option></select> 
+                                                                                    </div>
+
+                                                                                </div>
+                                                                                <div class="form-group col-lg-12">
+                                                                                    <div class="col-sm-12">
+                                                                                        <textarea class="form-control" rows="2" placeholder="comment" required="" name="comment" cols="50"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group col-lg-12">
+                                                                                    <div class="col-sm-12">
+                                                                                        <input class="form-control" name="upload" type="file">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group col-lg-12 ">
+                                                                                    <div class="col-sm-12 pull-right">
+                                                                                        <input class="btn btn-white  " type="submit" value="Submit">
+                                                                                    </div>
+                                                                                </div>
+
+
+
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                                                                                
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td></td><td></td><td></td><td></td><td></td><td></td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div id="tab-3" class="tab-pane ">
+                                            <div class="row">
+                                                <table class="table table-stripped dataTables-example" id="docTable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th><th> Name</th><th>Upload by</th><th>Size</th><th>Date</th><th>Status</th><th></th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+
+                                                        
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td></td><td></td><td></td><td></td><td></td><td></td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div id="tab-4" class="tab-pane ">
+                                            <div class="row">
+                                                <table class="table table-stripped dataTables-example">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th><th> Name</th><th>Upload by</th><th>Size</th><th>Date</th><th>Status</th><th></th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+
+                                                                                                                                                                        
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td></td><td></td><td></td><td></td><td></td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 288px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Dispatch a document -->
+
+
+
+<!-- End of delete modal -->
+
+<!-- Complete doc -->
+
+
+
+<!-- End of complete doc -->
+
+<!-- Start of edit modal -->
+
+
+<!-- End of edit modal -->
+
+
+
+
+
+               <div class="row">
+
+                   <div class="footer">
+
+                       <div>
+                          © IMS 2018
+                       </div>
+                   </div>
+
+               </div>
+               </div>
+               
+
+ 
+  </div>
+    
+   
+    
+<script src="./GISM - Documents Manager_files/jquery-2.2.4.js.download"></script>
+    <script src="./GISM - Documents Manager_files/bootstrap.min.js.download"></script>
+    <script src="./GISM - Documents Manager_files/jquery.metisMenu.js.download"></script>
+    <script src="./GISM - Documents Manager_files/jquery.slimscroll.min.js.download"></script>
+    <script src="./GISM - Documents Manager_files/jquery.gritter.min.js.download"></script>
+
+    <script src="./GISM - Documents Manager_files/jquery-ui.min.js.download"></script>
+    
+<script src="./GISM - Documents Manager_files/bootstrap-datepicker.js.download"></script>
+        
+    <!-- Custom and plugin javascript -->
+    <script src="./GISM - Documents Manager_files/inspinia.js.download"></script>
+    
+    <script src="./GISM - Documents Manager_files/pace.min.js.download"></script>
+    <script src="./GISM - Documents Manager_files/sparkline-demo.js.download"></script>
+     <script src="./GISM - Documents Manager_files/chartjs-demo.js.download"></script>
+
+    
+
+  
+
+ 
+<script src="./GISM - Documents Manager_files/datatables.min.js.download"></script>
+
+<script src="./GISM - Documents Manager_files/jquery.metisMenu.js(1).download"></script>
+<script src="./GISM - Documents Manager_files/jquery.slimscroll.min.js(1).download"></script>
+<script src="./GISM - Documents Manager_files/inspinia.js.download"></script>
+<script src="./GISM - Documents Manager_files/pace.min.js.download"></script>
+<script src="./GISM - Documents Manager_files/chosen.jquery.js.download"></script>
+
+
+<script type="text/javascript" src="./GISM - Documents Manager_files/toastr.min.js.download"></script>
+<script type="text/javascript" src="./GISM - Documents Manager_files/icheck.min.js.download"></script>
+
+<script>
+$(document).ready(function () {
+
+    $('.dataTables-example').DataTable({
+        dom: '<"html5buttons"B>lTfgitp',
+        aLengthMenu: [[5, 10, 15, -1], [5, 10, 15, "All"]],
+        pageLength: 5,
+        buttons: [
+
+        ]
+
+    });
+});
+
+
+
+</script>
+
+
+<!-- AJAX CRUD operations -->
+<script type="text/javascript">
+
+    //Delete
+    $(document).on('click', '.delete-doc', function () {
+        $('.modal-title').text('Delete Document');
+
+        $('#id_delete').val($(this).data('id'));
+        $('#title_delete').val($(this).data('title'));
+
+        $('#deleteDoc').modal('show');
+        id = $('#id_delete').val();
+    });
+
+
+    $('.modal-footer').on('click', '.del-doc', function () {
+
+        $.ajax({
+            type: 'DELETE',
+            url: '/documents/' + id,
+            data: {
+                '_token': $('input[name=_token]').val()
+            },
+
+            success: function (data) {
+                //  location.reload();
+                toastr.success('Successfully deleted Document', 'Success Alert', {timeOut: 5000});
+                $(".doc" + data['id']).remove();
+            },
+            error: function (data) {
+                console.log('Error:', data);
+            }
+        });
+    });
+    //End of delete
+
+
+    // Mark as complete
+
+    $(document).on('click', '.complete-doc', function () {
+        $('.modal-title').text('Mark as Complete');
+
+        $('#id_complete').val($(this).data('id'));
+        $('#title_complete').val($(this).data('title'));
+
+        $('#completeDoc').modal('show');
+        id = $('#id_complete').val();
+        
+    });
+
+
+    $('.modal-footer').on('click', '.comp-doc', function () {
+        var url = 'http://ims.ict.go.ug/complete';
+        $.ajax({
+            type: 'get',
+            url: url +'/'+id,
+            data: {
+                '_token': $('input[name=_token]').val(),
+                'id': id
+            },
+
+            success: function (data) {
+                location.reload();
+                toastr.success('Document successfully closed', 'Success Alert', {timeOut: 5000});
+            },
+            error: function (data) {
+                console.log('Error:', data);
+            }
+        });
+    });
+
+    // End mark as complete
+    //Start Edit
+
+    $(document).on('click', '.edit-modal', function () {
+        $('.modal-title').text('Edit document');
+        $('#id_edit').val($(this).data('id'));
+        $('#title_edit').val($(this).data('title'));
+        $('#description_edit').val($(this).data('description'));
+        id = $('#id_edit').val();
+        $('#editDoc').modal('show');
+    });
+    $('.modal-footer').on('click', '.edit', function () {
+        $.ajax({
+            type: 'PUT',
+            url: 'documents/' + id,
+            data: {
+                '_token': $('input[name=_token]').val(),
+                'id': $("#id_edit").val(),
+                'title': $('#title_edit').val(),
+                'description': $('#description_edit').val()
+            },
+            success: function (data) {
+                $('.errorTitle').addClass('hidden');
+
+                if ((data.errors)) {
+                    setTimeout(function () {
+                        $('#editDoc').modal('show');
+                        toastr.error('Validation error!', 'Error Alert', {timeOut: 5000});
+                    }, 500);
+
+                    if (data.errors.title) {
+                        $('.errorTitle').removeClass('hidden');
+                        $('.errorTitle').text(data.errors.title);
+                    }
+
+                } else {
+                    toastr.success('Successfully updated Document', 'Success Alert', {timeOut: 5000});
+                    location.reload();
+
+                }
+            }
+        });
+    });
+
+    //Delete Tracker
+    $(document).on('click', '.delete-comment', function () {
+        $('.modal-title').text('Delete Comment');
+
+        $('#id_delete').val($(this).data('id'));
+        $('#comment_delete').val($(this).data('comment'));
+
+
+        $('#deleteComment').modal('show');
+        id = $('#id_delete').val();
+    });
+
+    $('.modal-footer').on('click', '.del-comment', function () {
+        $.ajax({
+            type: 'DELETE',
+            url: '/comments/' + id,
+            data: {
+                '_token': $('input[name=_token]').val()
+            },
+
+            success: function (data) {
+                location.reload();
+                toastr.success('Successfully deleted comment', 'Success Alert', {timeOut: 5000});
+            },
+            error: function (data) {
+                console.log('Error:', data);
+            }
+        });
+    });
+    //End of delete
+</script>
+
+<script>
+
+    var config = {
+        '.chosen-select': {},
+        '.chosen-select-deselect': {allow_single_deselect: true},
+        '.chosen-select-no-single': {disable_search_threshold: 10},
+        '.chosen-select-no-results': {no_results_text: 'Oops, nothing found!'},
+        '.chosen-select-width': {width: "95%"}
+    }
+    for (var selector in config) {
+        $(selector).chosen(config[selector]);
+    }
+
+    $('.chosen').chosen({
+        width: '100%',
+        allow_single_deselect: true
+    });
+
+</script>
+   
+
+
+
+<div id="dispatch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+
+                    <div class="form-group row add">
+                        <label class="control-label col-sm-2" for="project">Document: </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="documentName" readonly="">
+                        </div>
+                    </div>
+
+                    <div class="form-group row add">
+                        <label class="control-label col-sm-2" for="sender_id">From: </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="milestone_add" placeholder="Robert Ravi" readonly="">
+                            <p class="errorMilestone text-center alert alert-danger hidden"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group row add">
+                        <label class="control-label col-sm-2" for="receiver_id">To: </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="milestone_add" placeholder="Add milestone here" required="">
+                            <p class="errorMilestone text-center alert alert-danger hidden"></p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row add">
+                        <label class="control-label col-sm-2" for="comment">Remarks: </label>
+                        <div class="col-sm-10">
+                            <textarea type="text" rows="2" class="form-control" id="comment" placeholder="Add comment here" required=""></textarea>
+                            <p class="errorComment text-center alert alert-danger hidden"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="due_date">Due: </label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="due_add" placeholder="Due date here" required="">
+                            <p class="errorDueDate text-center alert alert-danger hidden"></p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success dispatch" data-dismiss="modal">
+                    <span id="" class="fa fa-check"></span> Dispatch
+                </button>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">
+                    <span class="fa fa-remove"></span>Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div><div id="deleteDoc" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <h3 class="text-center">Are you sure you want to delete this document?</h3>
+                <br>
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="id">ID:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="id_delete" disabled="">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="title">Title:</label>
+                        <div class="col-sm-10">
+                            <input type="name" class="form-control" id="title_delete" disabled="">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger del-doc" data-dismiss="modal">
+                    <span id="" class="fa fa-remove"></span> Delete
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <span class="fa fa-remove"></span> Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div><div id="completeDoc" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <h4 class="text-center">Are you sure you want to complete this document?</h4>
+                <br>
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="id">ID:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="id_complete" disabled="">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="title">Title:</label>
+                        <div class="col-sm-10">
+                            <input type="name" class="form-control" id="title_complete" disabled="">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning comp-doc" data-dismiss="modal">
+                    <span id="" class="fa fa-pencil"></span> Mark as Complete
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <span class="fa fa-remove"></span> Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div><div id="editDoc" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+
+                    <div class="form-group hidden">
+                        <label class="control-label col-sm-2" for="id">ID:</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="id_edit" disabled="">
+                        </div>
+                    </div>
+
+                    <div class="form-group row add">
+                        <label class="control-label col-sm-3" for="title">Title: </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="title_edit" required="">
+                            <p class="errorTask text-center alert alert-danger hidden"></p>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="description">Description:</label>
+                        <div class="col-sm-9">
+                            <textarea cols="40" rows="3" class="form-control" id="description_edit" autofocus=""></textarea>
+                            <p class="errorFile text-center alert alert-danger hidden"></p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success edit" data-dismiss="modal">
+                    <span id="" class="fa fa-check"></span> Update Title
+                </button>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">
+                    <span class="fa fa-remove"></span> Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div></body></html>
+
+{% endblock %}
